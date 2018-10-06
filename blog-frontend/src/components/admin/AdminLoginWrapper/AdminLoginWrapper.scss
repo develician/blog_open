@@ -1,0 +1,17 @@
+@import 'utils';
+
+.Wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background: $oc-gray-0;
+    @include media("<=medium") {
+        width: 100%;
+    }
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

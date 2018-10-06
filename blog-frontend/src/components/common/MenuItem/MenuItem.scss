@@ -1,0 +1,27 @@
+@import 'utils';
+
+.MenuItem {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+
+
+    &.hidden {
+        display: none;
+    }
+
+    &:hover {
+        background: $post-item-hover;
+    }
+
+    &:active {
+        background: $post-item-active;
+    }
+}

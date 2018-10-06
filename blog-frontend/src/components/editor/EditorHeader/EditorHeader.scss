@@ -1,0 +1,16 @@
+@import 'utils';
+
+.EditorHeader {
+    display: flex;
+    background: $main-background;
+    height: 4rem;
+    align-items: center;
+    .Back {
+        padding: 1rem;
+    }
+
+    .Submit {
+        margin-left: auto;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,15 @@
+@import 'utils';
+
+.PageFooter {
+    background: $oc-gray-5;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Logo {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+}

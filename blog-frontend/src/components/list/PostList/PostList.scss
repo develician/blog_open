@@ -1,0 +1,105 @@
+@import 'utils';
+
+.MasonryWrapper {
+  position: relative;
+  padding: 1rem;
+  // margin-left: 15rem;
+  
+  @include media("<medium") {
+    margin-left: 0rem;
+    
+  }
+  .PostItem {
+
+    
+
+    font-family: 'Noto Sans KR';
+    background: $post-item-background;
+    // opacity: 0;
+    
+
+    margin-bottom: 1rem;
+
+    transition: all .15s ease-in;
+    width: calc((100% - 32px) / 3);
+    border-radius: 3px;
+
+    @include media('<large') {
+      width: calc((100% - 16px) / 2);
+    }
+    @include media('<medium') {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    @include material-shadow(2, 0.5);
+
+    .Thumbnail {
+      height: 200px;
+      width: 100%;
+      background-size: cover;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      background-position: center;
+      // padding: 0;
+    }
+    
+    .Non-Thumbnail {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      h3 {
+        // font-family: "Nanum Pen Script", sans-serif;
+        // font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+        color: $oc-gray-8;
+        a {
+          transition: all .15s ease-in; // 스타일 바뀔 때 애니메이션 효과
+          border-bottom: 1px solid transparent;
+        }
+        a:hover {
+          color: $main-background;
+          
+          // 마우스 호버시 밑줄 (밑줄과 글자 사이 여백, 얇은 밑줄을 위해 border-bottom 사용)
+          // border-bottom: 1px solid $oc-blue-6; 
+        }
+      }
+      .Date {
+        font-size: 0.85rem;
+        color: $oc-gray-5;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $oc-gray-3;
+      }
+      p {
+        word-wrap: break-word;
+        font-weight: 300;
+        color: $oc-gray-7;
+      }
+      .Tags {
+        font-size: 0.85rem;
+        color: $main-background;
+        word-wrap: break-word;
+        a {
+          &:hover {
+            color: $oc-green-5;
+            text-decoration: underline;
+          }
+        }
+        a + a { // 태그 사이 여백
+          margin-left: 0.25rem;
+        }
+      }
+      &:hover {
+        // 호버시 배경색 변경
+        background: $post-item-hover;
+
+        @include material-shadow(3, 0.5);
+        border-radius: 3px;
+      }
+    }
+
+  }
+
+}

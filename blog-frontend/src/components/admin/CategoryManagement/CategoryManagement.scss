@@ -1,0 +1,77 @@
+@import 'utils';
+
+
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    // margin-left: 15rem;
+
+    @include media("<medium") {
+        margin-left: 0;
+    }
+
+    .Title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    .PaddingWrapper {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .Button {
+            margin-top: 1rem;
+            margin-left: auto;
+            display: flex;
+        }
+    
+        .Table {
+            margin-top: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid white;
+            border-radius: 3px;
+            // width: 90%;
+            .Header {
+                display: flex;
+                .Head {
+                    flex: 1;
+                    font-size: 1.25rem;
+                    color: white;
+                }
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid white;
+            }
+    
+            .Body {
+                margin-top: 0.5rem;
+                
+                .Content {
+                    display: flex;
+                    
+                    .Item {
+                        flex: 1;
+                        font-size: 1.25rem;
+                        color: white;
+                    }
+        
+                    
+                }
+    
+                .Content + .Content {
+                    margin-top: 0.5rem;
+                    padding-top: 0.5rem;
+                    border-top: 1px solid white;
+                }
+            }
+    
+            
+        }
+    }
+}

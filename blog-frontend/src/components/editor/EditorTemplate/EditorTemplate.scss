@@ -1,0 +1,33 @@
+@import 'utils';
+
+.EditorTemplate {
+    .Panes {
+        height: calc(100vh - 4rem);
+        display: flex;
+        position: relative;
+
+        .Pane {
+            display: flex;
+            min-width: 0; // 내부의 내용이 커도 반대편 영역을 침범하지 않게 해줌
+            overflow: auto; // 너무 많이 줄이면 스크롤바가 나타나게 해줌
+        }
+
+        .Separator {
+            width: 1rem; // 클릭 영역을 넓게 설정하기 위함
+            height: 100%;
+            position: absolute;
+            transform: translate(-50%); // 자신의 50% 만큼 왼쪽으로 이동
+            cursor: col-resize; // 리사이즈 커서
+        }
+
+        @include media("<medium") {
+            .Editor {
+                flex: 1 !important;
+            }
+            .Preview,
+            .Separator {
+                display: none;
+            }
+        }
+    }
+}

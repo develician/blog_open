@@ -1,0 +1,32 @@
+@import 'utils';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 3rem);
+    position: relative;
+    padding: 2rem;
+
+    @include media("<medium") {
+        padding: 1rem;
+    }
+
+    .introduction-paper {
+
+        @include material-shadow(4, 0.5);
+
+        background: white;
+
+        border: 1px solid white;
+        border-radius: 3px;
+        
+
+        width: 100%;
+        min-height: calc(100vh);
+
+        padding: 1rem;
+        
+    }
+}

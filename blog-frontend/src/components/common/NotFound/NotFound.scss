@@ -1,0 +1,26 @@
+@import 'utils';
+
+.NotFound {
+    background: $main-background;
+    width: 100%;
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Center {
+        display: flex;
+        flex-direction: column;
+        .Description {
+            color: white;
+            font-weight: 500;
+        }
+
+        .BackButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+    }
+}

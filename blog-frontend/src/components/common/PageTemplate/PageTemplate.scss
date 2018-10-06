@@ -1,0 +1,24 @@
+@import 'utils';
+
+.PageTemplate {
+    
+    @include media("<medium") {
+         display: flex;
+        flex-direction: column;
+       
+    // flex-direction: row;
+
+    }
+
+    .ContentWrapper {
+        @include media(">medium") {
+            margin-left: 15rem;
+        }
+        flex: 1;
+        main {
+            // width: 100%;
+            background: $main-background;
+            min-height: calc(100vh);
+        }
+    }
+}

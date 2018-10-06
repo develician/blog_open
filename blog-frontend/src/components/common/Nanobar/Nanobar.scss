@@ -1,0 +1,13 @@
+@import "utils";
+
+// .NanoBar {
+// }
+
+:global .nanobar {
+  position: relative;
+  .bar {
+    position: absolute;
+    top: 0;
+    background: white;
+  }
+}

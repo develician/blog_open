@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">killi8n's blog</string>
+    <string name="baseUrl">http://13.209.206.49/api</string>
+</resources>

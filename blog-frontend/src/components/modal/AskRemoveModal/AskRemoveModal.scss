@@ -1,0 +1,19 @@
+@import 'utils';
+
+.Question {
+  background: white;
+  padding: 2rem;
+  .Title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .Description {
+    margin-top: 0.25rem;
+  }
+}
+
+.Options {
+  padding: 1rem;
+  background: $oc-gray-1;
+  text-align: right;
+}

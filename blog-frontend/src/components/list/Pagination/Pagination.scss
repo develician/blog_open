@@ -1,0 +1,23 @@
+@import 'utils';
+.PaginationWrapper {
+  // margin-top: 1rem;
+  // margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+
+  margin-left: 1rem;
+  @include media("<medium") {
+    margin-left: 1rem;
+  }
+
+  // 세로 중앙 정렬
+  display: flex;
+  align-items: center;
+
+  .Number {
+    font-size: 0.85rem;
+    text-align: center;
+    color: white;
+    flex: 1; // 남은 공간을 다 차지
+  }
+}

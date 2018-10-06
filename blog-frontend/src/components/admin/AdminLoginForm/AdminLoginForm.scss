@@ -1,0 +1,58 @@
+@import 'utils';
+
+.Form {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 625px;
+    border-radius: 3px;
+    @include media("<=medium") {
+        width: 100%;
+    }
+    background: white;
+    border: 1px solid $oc-gray-3;
+    .Logo {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .Line {
+        display: flex;
+        flex-direction: column;
+        .Label {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .Input {
+           display: flex;
+           align-items: center;
+           width: 100%;
+            input {
+                flex: 1;
+                width: 100%;
+                border: 1px solid $oc-gray-3;
+                height: 2rem;
+                font-size: 1.5rem;
+                outline: none;
+                font-family: "Do Hyeon", sans-serif;
+            }
+        }
+
+        .Label + .Input {
+            margin-top: 1rem;
+        }
+    }
+
+    .Line + .Button {
+        margin-top: 1rem;
+    }
+
+    .Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Line + .Line {
+        margin-top: 1.5rem;
+    }
+}

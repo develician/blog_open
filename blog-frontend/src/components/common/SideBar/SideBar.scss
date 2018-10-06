@@ -1,0 +1,69 @@
+@import 'utils';
+
+.SideBar {
+
+    // margin-bottom: 10rem;
+
+    position: fixed;
+    height: 100%;
+
+    overflow-y: auto;
+
+    background: $post-item-background;
+    // border-right: 0.5px solid #667467;
+    width: 15rem;
+    @include media("<=medium") {
+        width: 100%;
+        position: relative;
+        height: auto;
+        
+    }
+    
+
+    display: flex;
+    flex-direction: column;
+    // border-right: 1px solid $oc-blue-7;
+    .Logo {
+        // font-family: 'Nanum ';
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 1.75rem;
+        font-weight: 600;
+        user-select: none;
+        cursor: pointer;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        // &:hover {
+        //     color: $oc-gray-1;
+        // }
+
+        @include media('<=medium') {
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+        }
+    }
+
+   .BurgerWrapper {
+       display: flex;
+       justify-content: center;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+       @include media("<=medium") {
+           padding-bottom: 1rem;
+           margin-bottom: 0rem;
+       }
+    .Hamburger {
+        display: none;
+        font-size: 2rem;
+        color: $main-background;
+        @include media("<=medium") {
+            display: block;
+        }
+    }
+   }
+
+    
+}
