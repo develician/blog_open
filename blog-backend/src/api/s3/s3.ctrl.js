@@ -7,8 +7,8 @@ const path = require("path");
 const s3 = new AWS.S3({
   region: "ap-northeast-3",
   signatureVersion: "v4",
-  accessKeyId: "AKIAISRFI3SYWZBO7VFQ",
-  secretAccessKey: "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"
+  accessKeyId: "S3_ACCESS_KEY",
+  secretAccessKey: "S3_SECRET_ACCESS_KEY"
 });
 
 exports.checkLogin = async (ctx, next) => {
